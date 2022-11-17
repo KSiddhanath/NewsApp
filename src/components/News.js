@@ -119,9 +119,9 @@ export class News extends Component {
           NewsMonkey -Top {this.props.category} Headlines
         </h2>
         <InfiniteScroll
-          dataLength={this.state.articles.length}
+          dataLength={this.state.articles}
           next={this.fetchMoreData}
-          hasMore={this.state.articles.length!==this.state.totalResults}>
+          hasMore={this.state.articles!==this.state.totalResults}>
  
           <div className="row">
             {this.state.articles.map((element) => {
